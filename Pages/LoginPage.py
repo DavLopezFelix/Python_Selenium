@@ -4,10 +4,16 @@ from POMDemo_1.Config.config import TestData
 
 class LoginPage(BasePage):
 
+    # """By locators"""
+    # EMAIL = (By.ID, 'username')
+    # PASSWORD = (By.ID, 'password')
+    # LOGIN_BUTTON = (By.ID, 'loginBtn')
+    # SINGUP_LINK = (By.LINK_TEXT, 'Registrarme')
+
     """By locators"""
-    EMAIL = (By.ID, 'username')
-    PASSWORD = (By.ID, 'password')
-    LOGIN_BUTTON = (By.ID, 'loginBtn')
+    EMAIL = (By.NAME, 'username')
+    PASSWORD = (By.NAME, 'password')
+    LOGIN_BUTTON = (By.CSS_SELECTOR, 'button[type="submit"]')
     SINGUP_LINK = (By.LINK_TEXT, 'Registrarme')
 
     """"Constructor of the pages class"""

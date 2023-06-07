@@ -3,7 +3,7 @@ from POMDemo_1.Pages.BasePage import BasePage
 from POMDemo_1.Config.config import TestData
 
 class HomePage(BasePage):
-    HEADER = (By.CSS_SELECTOR, ".private-header__title.private-page__title")
+    HEADER = (By.XPATH, "//div[@class='oxd-topbar-header-title']//h6")
     ACCOUNT_ICON = (By.ID, "account-menu")
     ACCOUNT_DETAILS = (By.CLASS_NAME, "accountexpansion expansion")
     ACCOUNT_EMAIL = (By. CLASS_NAME, "user-info-email")
