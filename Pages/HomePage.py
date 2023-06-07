@@ -4,9 +4,9 @@ from POMDemo_1.Config.config import TestData
 
 class HomePage(BasePage):
     HEADER = (By.XPATH, "//div[@class='oxd-topbar-header-title']//h6")
-    ACCOUNT_ICON = (By.ID, "account-menu")
-    ACCOUNT_DETAILS = (By.CLASS_NAME, "accountexpansion expansion")
-    ACCOUNT_EMAIL = (By. CLASS_NAME, "user-info-email")
+    ACCOUNT_ICON = (By.CLASS_NAME, "oxd-userdropdown-tab")
+    ACCOUNT_DETAILS = (By.CLASS_NAME, "oxd-dropdown-menu")
+    ACCOUNT_NAME = (By.XPATH, '//ul[@class="oxd-dropdown-menu"]//li[1]')
 
     def __init__(self, driver):
         super().__init__(driver)
@@ -19,7 +19,8 @@ class HomePage(BasePage):
             return self.get_element_text(self.HEADER)
     
     def is_account_details_visible(self):
+        self.do_click(self.ACCOUNT_ICON)
         return self.is_visible(self.ACCOUNT_DETAILS)
     
-    def get_account_email(self):
-        return self.get_element_text(self.ACCOUNT_EMAIL)
+    def get_account_name(self):
+        return self.get_element_text(self.ACCOUNT_NAME)

@@ -20,5 +20,6 @@ class TestData():
 
     HOME_PAGE_TITTLE = 'OrangeHRM'
     HOME_PAGE_HEADER = 'Dashboard'
+    NAME_ACCOUNT = 'About'
 
 
