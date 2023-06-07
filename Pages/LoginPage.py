@@ -7,14 +7,14 @@ class LoginPage(BasePage):
     # """By locators"""
     # EMAIL = (By.ID, 'username')
     # PASSWORD = (By.ID, 'password')
-    # LOGIN_BUTTON = (By.ID, 'loginBtn')
+    # LOGIN_BUTTON = (By.ID, 'loginBtn')s
     # SINGUP_LINK = (By.LINK_TEXT, 'Registrarme')
 
     """By locators"""
     EMAIL = (By.NAME, 'username')
     PASSWORD = (By.NAME, 'password')
     LOGIN_BUTTON = (By.CSS_SELECTOR, 'button[type="submit"]')
-    SINGUP_LINK = (By.LINK_TEXT, 'Registrarme')
+    SINGUP_LINK = (By.LINK_TEXT, 'OrangeHRM, Inc')
 
     """"Constructor of the pages class"""
     def __init__(self, driver):

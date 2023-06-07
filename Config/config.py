@@ -1,6 +1,5 @@
 class TestData():
     CHROME_EXECUTABLE_PATH = "C://SeleniumDrivers//chromedriver_win32//chromedriver.exe"
-    #FIREFOX_EXECUTABLE_PATH = "C://SeleniumDrivers//geckodriver-v0.33.0-win-aarch64//geckodriver.exe"
     FIREFOX_EXECUTABLE_PATH = "C://SeleniumDrivers//geckodriver-v0.33.0-win32"
 
 
