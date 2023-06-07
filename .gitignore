@@ -1,0 +1,5 @@
+geckodriver.log
+hubSpot.html
+assets/
+.pytest_cache/
+__pycache__/
