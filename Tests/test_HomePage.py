@@ -1,8 +1,8 @@
 import pytest
-from POMDemo_1.Pages.LoginPage import LoginPage
-from POMDemo_1.Config.config import TestData
-from POMDemo_1.Tests.test_base import BaseTest
-from POMDemo_1.Pages.HomePage import HomePage
+from ..Pages.LoginPage import LoginPage
+from ..Config.config import TestData
+from ..Tests.test_base import BaseTest
+from ..Pages.HomePage import HomePage
 
 class Test_HomePage(BaseTest):
 
