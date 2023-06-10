@@ -1,7 +1,7 @@
 import pytest
-from POMDemo_1.Config.config import TestData
-from POMDemo_1.Tests.test_base import BaseTest
-from POMDemo_1.Pages.LoginPage import LoginPage
+from ..Config.config import TestData
+from ..Tests.test_base import BaseTest
+from ..Pages.LoginPage import LoginPage
 
 class Test_Login(BaseTest):
 

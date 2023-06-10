@@ -1,6 +1,6 @@
 from selenium.webdriver.common.by import By
-from POMDemo_1.Pages.BasePage import BasePage
-from POMDemo_1.Config.config import TestData
+from .BasePage import BasePage
+from ..Config.config import TestData
 
 class HomePage(BasePage):
     HEADER = (By.XPATH, "//div[@class='oxd-topbar-header-title']//h6")
